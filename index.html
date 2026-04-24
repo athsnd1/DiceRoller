@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>DiceRoller</h1>
+
+        <form class="number-picker">
+            <label for="number-field"># of dice: </label>
+            <input type="number" min="1" value="1" max="6" step="1" id="number-field">
+            <button type="button" id="dice-roll-btn" onclick="rollDice()">Role Dice</button>
+        </form>
+
+        <br>
+
+        <div id="dice-numbers"></div>
+        <div id="images"></div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

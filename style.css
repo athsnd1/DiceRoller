@@ -1,0 +1,62 @@
+body{
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+    background-color: rgb(14, 13, 13);
+}
+
+.container{
+    border:2px solid #007bff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color:white;
+    padding: 1rem;
+    height:fit-content;
+}
+
+.container h1{
+    color:#007bff;
+    font-weight: bold;
+    font-size: clamp(2rem, 50%, 5rem);
+}
+
+.container .number-picker{
+    display: flex;
+    gap:10px;
+    width: 100%;
+}
+
+.container #images{
+    margin:1rem;
+    padding:1rem;
+}
+
+.container #images img{
+    width:100px;
+}
+
+.number-picker input{
+    outline: 2px solid transparent;
+    text-align: center;
+    padding:0.5rem;
+    min-width: 100px;
+    transition: outline-color 0.3s ease;
+    font-size:1rem;
+}
+
+.number-picker input:focus{
+    outline:2px solid #007bff;
+    border-color: #007bff;
+}
+
+.number-picker button{
+    font-family: inherit;
+    color:white;
+    background-color: #007bff;
+    border:none;
+    padding:0.5rem;
+    font-size:1rem;
+    margin-left:10px;
+    min-width:200px;
+}
