@@ -13,6 +13,10 @@ function rollDice(){
         images.push(`<img src=icons/${value}.png alt=Dice ${value}>`);
     }
 
-    showDice.textContent = `Dice: ${diceNumbers.join(",")}`;
-    imageArea.innerHTML = images.join(" ");
+    if(numDice < 1 || numDice > 6){
+        showDice.textContent = "Invalid Entry, number must be between 1 and 6"
+    }else{
+        showDice.textContent = `Dice: ${diceNumbers.join(",")}`;
+        imageArea.innerHTML = images.join(" ");
+    }
 }
